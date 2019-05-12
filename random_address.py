@@ -16,9 +16,10 @@ print(Fore.RED + Back.GREEN + "")
 os.system("cowsay -f ghostbusters Viperzcrew")
 print(Style.RESET_ALL)
 print("")
-print(Fore.MAGENTA + "[1] - Generate Addresses")
-print(Fore.MAGENTA + "[2] - Credits")
+print(Fore.MAGENTA + "[1] - Generate Addresses (Kali Users)")
+print(Fore.MAGENTA + "[2] - Generate Address + Creditcards (Termux Users)")
 print(Fore.MAGENTA + "[3] - Reset your generated address (do it after restarting the tool)")
+print(Fore.MAGENTA + "[4] - Credits")
 print(Fore.MAGENTA + "[99] - Exit")
 print(" ")
 inp1 = input(Fore.RED + "< u0_a245@localhost ~> ")
@@ -42,6 +43,11 @@ if inp1=="1":
                         os.system("rig")
 
 if inp1=="2":
+        os.system("apt install php")
+        os.system("php file.php")
+
+
+if inp1=="4":
         print(Fore.CYAN + "Created by MrBlackX")
         print(Fore.CYAN + "Join us: t.me/viperzcrew")
         sys.exit(3)
